@@ -27,6 +27,7 @@ Route::post('/task', [App\Http\Controllers\TaskController::class, 'store'])->nam
 
 Route::delete('/task/{task}', [App\Http\Controllers\TaskController::class, 'destroy'])->name('/task/{task}');
 // 上記のように {task} と記述->コントローラ側で変数 $task としてパラメータを取得できる
-// Auth::routes();
+
+Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
