@@ -29,5 +29,4 @@ Route::delete('/task/{task}', [App\Http\Controllers\TaskController::class, 'dest
 // 上記のように {task} と記述->コントローラ側で変数 $task としてパラメータを取得できる
 
 Auth::routes();
-
-// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
